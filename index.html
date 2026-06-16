@@ -10,7 +10,7 @@
 
     </header>
     <main>
-        <section id="seclogin">
+        <div id="divLogin">
             <h2>Login</h2>
             
                 <label for="txtLogUser">Usuario:</label>
@@ -22,43 +22,62 @@
                 <input type="button" value="Login" id="btnLogin">
             
             <input type="button" id="btnIrRegistrar" value="Registrar">
-        </section>
+        </div>
 
-        <section id="secRegistrar">
-            <h2>Registrar</h2>
-            <form action="">
-                <label for="txtRegUser">Usuario:</label>
-                <input type="text" id="txtRegUser">
-                <br>
-                <label for="txtRegPass">Contraseña:</label>
-                <input type="password" id="txtRegPass">
-                <input type="button" value="Login" id="btnRegistro">
-            </form>
-        </section>
+        <div id="divRegistrar">
+            
+             <h1>Registro</h1>
+    <label for="txtNombreUsuario">Nombre Usuario:</label>
+    <input type="text" id="txtNombreUser">
+    <br>
+    <br>
+    <label for="txtContrasena">Contraseña:</label>
+    <input type="text" id="txtPass">
+    <br>
+    <br>
+    <label for="txtNombre">Nombre:</label>
+    <input type="text" id="txtNombre">
+    <br>
+    <br>
+    <label for="slcNivel">Nivel de Experiencia:</label>
+    <select id="slcNivel">
+        <option value="">Seleccione su Nivel:</option>
+        <option value="junior">Junior</option>
+        <option value="semi-senior">Semi-Senior</option>
+        <option value="senior">Senior</option>
+    </select>
+    <br>
+    <br>
+    <label for="slcArea">Area:</label>
+    <select  id="slcArea">
+        <option value="">Seleccione un Area:</option>
+        <option value="tecnologia">Tecnologia</option>
+        <option value="diseno">Diseño</option>
+        <option value="marketing">Marketing</option>
+        <option value="administracion">Administracion</option>
+        <option value="otros">Otros</option>
+    </select>
+    <br>
+    <br>
+    <input type="button" id="btnRegistrar" value="Registrar">
+        </div>
 
 
-        <section id="secPostulante">
+        <div id="divPostulante">
             <div id="divMenuPostulante">
                 <h2>Menú Postulante</h2>
             </div>
-
-           
                 <input type="button" id="btnListadoOfertasActivas" value="Listado Ofertas Activas">
-            
-
-            
                 <input type="button" id="btnMisPostulaciones" value="Mis Postulaciones">
-           
-
-           
                 <input type="button" id="btnCatalogoOfertasDestacadas" value="Catalogo Ofertas Destacadas">
           
             <input type="button" id="btnCerrarSesion" value="Cerrar Sesion">
-         </section>
+        </div>
 
-          <section id="secAdmin">
+          <div id="divAdmin">
             <div id="divMenuAdmin">
                 <h2>Menú Administrador</h2>
+                
             </div>
 
             <div id="divCrearOfertasLaborales">
@@ -73,7 +92,7 @@
                 <input type="button" id="btnVerEstadisticas" value="Ver Estadisticas">
             </div>
             <input type="button" id="btnCerrarSesion" value="Cerrar Sesion">
-         </section>
+        </div>
 
         
     </main>
