@@ -24,7 +24,6 @@
             <input type="button" id="btnIrRegistrar" value="Registrar">
         </div>
 
-<<<<<<< HEAD
         <div id="divRegistrar">
             
              <h1>Registro</h1>
@@ -34,16 +33,6 @@
     <br>
     <label for="txtContrasena">Contraseña:</label>
     <input type="text" id="txtPass">
-=======
-        <div id="registroPostulante">
-    <h1>Registro</h1>
-    <label for="txtNombreUsuario">Nombre Usuario:</label>
-    <input type="text" id="txtNombreUsuario">
-    <br>
-    <br>
-    <label for="txtContrasena">Contraseña:</label>
-    <input type="text" id="txtContrasena">
->>>>>>> bb15303ef6d20de52e7f7c54faa8017eeaf3c12b
     <br>
     <br>
     <label for="txtNombre">Nombre:</label>
@@ -52,7 +41,7 @@
     <br>
     <label for="slcNivel">Nivel de Experiencia:</label>
     <select id="slcNivel">
-        <option value="">Seleccione su Nivel:</option>
+        <option value="" disabled selected>Seleccione su Nivel:</option>
         <option value="junior">Junior</option>
         <option value="semi-senior">Semi-Senior</option>
         <option value="senior">Senior</option>
@@ -61,7 +50,7 @@
     <br>
     <label for="slcArea">Area:</label>
     <select  id="slcArea">
-        <option value="">Seleccione un Area:</option>
+        <option value="" disabled selected>Seleccione un Area:</option>
         <option value="tecnologia">Tecnologia</option>
         <option value="diseno">Diseño</option>
         <option value="marketing">Marketing</option>
@@ -71,11 +60,8 @@
     <br>
     <br>
     <input type="button" id="btnRegistrar" value="Registrar">
-<<<<<<< HEAD
+    <input type="button" id="btnIrLogin" value="Volver al login">
         </div>
-=======
-</div>
->>>>>>> bb15303ef6d20de52e7f7c54faa8017eeaf3c12b
 
 
         <div id="divPostulante">
@@ -97,8 +83,13 @@
 
             <div id="divCrearOfertasLaborales">
                 <input type="button" id="btnCrearOfertasLaborales" value="Crear Ofertas Laborales">
+                
             </div>
 
+            <div >
+                <input type="button" value="Editar o cerrar ofertas" id="btnEditarCerrarOfertas">
+            </div>
+            
             <div id="divProcesarPostulaciones">
                 <input type="button" id="btnProcesarPostulaciones" value="Procesar Postulaciones">
             </div>
@@ -109,7 +100,44 @@
             <input type="button" id="btnCerrarSesion" value="Cerrar Sesion">
         </div>
 
-        
+        <div id="divCrearOferta">
+            <label for="txtTituloTrabajo">Titulo del trabajo</label>
+            <input type="text" id="txtTituloTrabajo"> <br>
+            <label for="txtNombreEmpresa">Nombre de la empresa</label>
+            <input type="text" id="txtNombreEmpresa"> <br>
+            <label for="slcArea">Area</label>
+            <select id="slcAreaOferta">
+                <option value="" disabled selected >Seleccione un Area:</option>
+                <option value="tecnologia">Tecnologia</option>
+                <option value="diseno">Diseño</option>
+                <option value="marketing">Marketing</option>
+                <option value="administracion">Administracion</option>
+                <option value="otros">Otros</option>           
+             </select> <br>
+             <label for="txtDescripcionOferta">Descripcion</label>
+             <input type="text" id="txtDescripcionOferta"><br>
+             <label for="slcNivelRequerido">Nivel Requerido</label>
+             <select id="slcNivelRequerido">
+                <option value="" disabled selected>Seleccione su Nivel:</option>
+                <option value="junior">Junior</option>
+                <option value="semi-senior">Semi-Senior</option>
+                <option value="senior">Senior</option>
+             </select> <br>
+             <label for="txtLimite">Limite:</label>
+             <input type="number" id="txtLimite"><br>
+             <label for="txtVacantes">Cantidad vacantes</label>
+             <input type="number" id="txtVacantes"><br>
+             <label for="checkboxDestacada">Oferta Destacada:</label>
+             <input type="checkbox" id="checkboxDestacada"> <br>
+
+             <input type="button" value="Guardar" id="btnGuardarOferta">
+        </div>          
+        <br>
+        <div id="divEditarCerrarOferta" style="border: 1px solid black;">
+            <h2></h2>
+            
+        </div>
+
     </main>
     <footer>
 
